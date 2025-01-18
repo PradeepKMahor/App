@@ -1,0 +1,113 @@
+{
+  "info": {
+    "_postman_id": "19820fac-ee30-41d6-8aee-a5b84e3b846c",
+    "name": "Users",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "41246763"
+  },
+  "item": [
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"PradeepMahor47@gmail.com\",\r\n  \"username\": \"PradeepM\",\r\n  \"firstName\": \"Pradeep\",\r\n  \"middleName\": \"Rajaram\",\r\n  \"lastName\": \"Mahor\",\r\n  \"city\": \"Pune\",\r\n  \"state\": \"Maharashtra\",\r\n  \"country\": \"India\",\r\n  \"password\": \"h$VB1P4Uh!E4!Zm\",\r\n  \"postalCode\": 40041,\r\n  \"skillOrOccupation\": \"\",\r\n  \"biography\": \"\",\r\n  \"streetAddress\": \"\",\r\n  \"profilePhoto\": \"\",\r\n  \"coverPhoto\": \"\",\r\n  \"facebookLink\": \"\",\r\n  \"twitterLink\": \"\",\r\n  \"linkedinLink\": \"\",\r\n  \"websiteLink\": \"\",\r\n  \"gitHubLink\": \"https://github.com/Pradeepkumar-Mahor\",\r\n  \"roles\": [\r\n    \"Basic\",\"Admin\",\"SuperAdmin\"\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44323/api/Account/register",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44323",
+          "path": [
+            "api",
+            "Account",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"PradeepM\",\r\n  \"password\": \"h$VB1P4Uh!E4!Zm\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44323/api/Account/login",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44323",
+          "path": [
+            "api",
+            "Account",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Detail",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlByYWRlZXBNYWhvcjQ3QGdtYWlsLmNvbSIsIm5hbWUiOlsiUHJhZGVlcE0iLCJQcmFkZWVwIiwiTWFob3IiXSwibmFtZWlkIjoiMWM5ZTg1YjYtM2Y1NC00NDBjLWE2MzAtYmNjNGU2ODIxYzE2IiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo0MjAwIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwicm9sZSI6WyJTdXBlckFkbWluIiwiQWRtaW4iLCJCYXNpYyJdLCJuYmYiOjE3MzcxODgxMDQsImV4cCI6MTczNzI3NDUwNCwiaWF0IjoxNzM3MTg4MTA0fQ.mlUBIWZZB0gT_xhVG8gb0UzBquHNjpWmP6Go3D0UUzo",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44323/api/Account/detail",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44323",
+          "path": [
+            "api",
+            "Account",
+            "detail"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
